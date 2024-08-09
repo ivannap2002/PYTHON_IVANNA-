@@ -1,9 +1,6 @@
-#Escribir un programa que calcule el IMC de una persona
+#lee un texto y lo almacena en la variable nombre
 
-peso = float(input("Introduce tu peso: "))
+nombre= input("¿Cual es tu nombre?")
+print("Un gusto conocerte", nombre,"!")
 
-altura = float(input("Introduce tu altura: "))
-
-imc = peso / (altura * altura)
-
-print("Tu IMC es:", imc)
+print("Vaya tu nombre tiene ",len(nombre),"letras!")
