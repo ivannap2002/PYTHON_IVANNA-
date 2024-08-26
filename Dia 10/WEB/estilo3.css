@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    gap: 10px; /* Espacio entre el logo y los botones */
+    padding: 10px; /* Opcional: agrega espacio interno */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Asegura que la imagen del logo se ajuste bien en su contenedor */
+    border-radius: 50%; /* Hace que el logo sea circular */
+}
+
+.boton {
+    background-color: rgb(7, 228, 81);
+    border: solid 1px rgb(69, 153, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    padding: 0 15px; /* Relleno simétrico para mayor equilibrio */
+    cursor: pointer;
+    display: inline-flex; /* Asegura que el botón se ajuste al contenido */
+    align-items: center; /* Centra verticalmente el texto dentro del botón */
+    justify-content: center; /* Centra horizontalmente el texto dentro del botón */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease; /* Transición suave */
+}
+
+.boton:hover {
+    background-color: rgb(136, 245, 172);
+    color: rgb(255, 255, 255);
+}
+
+.boton:active {
+    background-color: rgb(21, 171, 16);
+    color: rgb(255, 255, 255);
+    transform: scale(0.98); /* Efecto de clic */
+}
